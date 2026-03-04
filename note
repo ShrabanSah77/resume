@@ -1,0 +1,57 @@
+# Types of method.
+
+# Among all the method for beginner only focus on GET and POST method
+
+# Get Metnod
+
+Used to request (get) data from the server.
+Example: text = request.GET['text']
+{
+    data is visible in URL
+    used to searching, filtering, viewing pages
+    should not change data
+}
+
+Example Use:
+{
+    Search bar
+    Viewing a profile
+    Reading data
+}
+
+# POST Method
+
+Used to send data to the server to create/update something
+Example: text = request.POST['text']
+{
+    Data is hidden from URL
+    More secure than GET
+    Used when submitting forms
+}
+
+Example use:
+{
+    Login form
+    Registration
+    Uload file
+    submit comment
+}
+
+# PUT Method
+
+Used to update existing data completely.
+
+Example Use: 
+{
+    update full user profile. Mostly used in APIs (not basic Django forms).
+}
+
+# PATCH method
+
+Used to update part of existing data.
+
+Example:
+{
+    Only update user email, not full profile.
+    Used in REST APIs.
+}
